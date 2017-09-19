@@ -11,7 +11,7 @@ namespace HelperMethods1
         static void Main(string[] args)
         {
             // this declares a varable called myValue, and sets it equal to superSecretFomula
-            string myValue = superSecretFormula;
+            string myValue = superSecretFormula("sunshine");
             Console.WriteLine(myValue);
             Console.ReadLine();
         }
@@ -20,6 +20,10 @@ namespace HelperMethods1
         {
             //some cool stuff here
             return "Hello World";
+        }
+        private static string superSecretFormula(string name)
+        {
+            return String.Format("Hello, {0}!", name);
         }
     }
 }
